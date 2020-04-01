@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
-  
+  resources :posts do
+    resources :comments
+  end
+
   get '/pages', to: 'pages#index'
   post '/pages', to: 'pages#create'
   get '/pages/new', to: 'pages#new', as: 'new_page'
