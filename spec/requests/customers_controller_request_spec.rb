@@ -48,7 +48,7 @@ RSpec.describe "CustomersControllers", type: :request do
   describe "put customer_path with invalid data" do
     it "does not update the customer record or redirect"
   end
-  descrbe "delete a customer record" do
+  describe "delete a customer record" do
     it "deletes a customer record"
   end
 end
